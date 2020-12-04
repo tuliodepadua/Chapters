@@ -1,22 +1,19 @@
-# Chapter
-
-Este repositório tem como objetivo armazenar conteúdo de minhas apresentações no Chapter.
-
-**Abaixo segue a lista de apresentações e suas respectivas pastas.**
+s respectivas pastas.\*\*
 
 ## Reactjs: Animações e efeitos com React
 
 - ### AnimeJS
 
-  **Descrição:** Demonstração de como utilizar animações com AnimeJS para transições e efeitos no React. Neste exemplo há também exemplos de animações com CSS.
-  **Path:** /apresentacoes/ReactAnimacoesEfeitosReact/animejs
+  **Descrição:**
+  Demonstração de como utilizar animações com AnimeJS para transições e efeitos no React. Neste exemplo há também exemplos de animações com CSS.
+  **Path:**
+  /apresentacoes/ReactAnimacoesEfeitosReact/animejs
   **Referência:**
-
-  - Página da lib
-    https://animejs.com/
-    **Instruções:**
-    Para instalar as libs rode **_yarn_**
-    Para rodar a aplicação utilize **_yarn start_**
+  Página da lib
+  https://animejs.com/
+  **Instruções:**
+  Para instalar as libs rode **_yarn_**
+  Para rodar a aplicação utilize **_yarn start_**
 
 - ### CSS
 
@@ -40,12 +37,9 @@ Este repositório tem como objetivo armazenar conteúdo de minhas apresentaçõe
   **Referência:**
   Video referência
   https://www.youtube.com/watch?v=dZH9aDX8T-0
-
   Lottie files
   https://lottiefiles.com/
-
   Plugin Affter effects
   https://aescripts.com/bodymovin
-
   Link tutorial
   https://www.youtube.com/watch?v=BFnU2P9SmYI
