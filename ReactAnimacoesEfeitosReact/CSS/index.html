@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/tabela.js"></script>
+  </head>
+  <body>
+    <div id="tabelaGeral" class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="col s10 offset-s2 grafico">
+            <div class="col s2"></div>
+            <div id="ge1" class="col s2 colGraf">
+              <div class="col s12 hideColumn"></div>
+              <div class="col s12 infoColumn valign-wrapper">
+                Gestão Reativa
+              </div>
+              <div class="col s12 column"></div>
+            </div>
+            <div id="ge2" class="col s2 colGraf">
+              <div class="col s12 hideColumn"></div>
+              <div class="col s12 infoColumn valign-wrapper">
+                Gestão Normativa
+              </div>
+              <div class="col s12 column"></div>
+            </div>
+            <div id="ge3" class="col s2 colGraf">
+              <div class="col s12 hideColumn"></div>
+              <div class="col s12 infoColumn valign-wrapper">
+                Gestão Proativa
+              </div>
+              <div class="col s12 column"></div>
+            </div>
+            <div id="ge4" class="col s2 colGraf">
+              <div class="col s12 hideColumn"></div>
+              <div class="col s12 infoColumn valign-wrapper">
+                Excelência Operacional
+              </div>
+              <div class="col s12 column"></div>
+            </div>
+            <div class="col s2"></div>
+          </div>
+          <div class="col s10 offset-s2 espectro">
+            <div class="col s2 valign-wrapper">
+              Negócio orientado por Controle de Custos
+            </div>
+            <div id="e1" class="col s2 alinhaEtapa">
+              <img src="assets/img/circle.png" alt="" />
+            </div>
+            <div id="e2" class="col s2 alinhaEtapa">
+              <img src="assets/img/circle.png" alt="" />
+            </div>
+            <div id="e3" class="col s2 alinhaEtapa">
+              <img src="assets/img/circle.png" alt="" />
+            </div>
+            <div id="e4" class="col s2 alinhaEtapa">
+              <img src="assets/img/circle.png" alt="" />
+            </div>
+            <div class="col s2 valign-wrapper">
+              Negócio orientado por Dados e Informação
+            </div>
+          </div>
+          <div class="col s10 offset-s2 descricao">
+            <h2>teste</h2>
+            <p>Descricao</p>
+          </div>
+          <div class="col s10 no-padding offset-s2 setoresTags"></div>
+        </div>
+        <div class="col s12">
+          <div class="col s2 no-padding">
+            <div id="f1" class="col s11 lateralEsquerda valign-wrapper">
+              Suíte para Gestão de Ativos
+            </div>
+            <div id="f2" class="col s11 lateralEsquerda valign-wrapper">
+              Gestão da Informação
+            </div>
+            <div id="f3" class="col s11 lateralEsquerda valign-wrapper">
+              Inteligência Artificial
+            </div>
+            <div id="f4" class="col s11 lateralEsquerda valign-wrapper">
+              PD&I
+            </div>
+          </div>
+          <div id="cards" class="col s10 no-padding">
+            <div class="cardModal">
+              <span>x</span>
+              <h2></h2>
+              <hr />
+              <p></p>
+            </div>
+            <div class="cardbg"></div>
+            <div
+              id="c1"
+              class="col s2 bx-azul-escuro valign-wrapper center-align card-mural"
+            >
+              Mobilidade para atividades em campo
+            </div>
+            <div class="col s2 no-padding">
+              <div
+                id="c2"
+                class="col s12 no-padding bx-azul-escuro valign-wrapper center-align card-mural"
+              >
+                Operação
+              </div>
+              <div
+                id="c3"
+                class="col s12 no-padding bx-azul-escuro valign-wrapper center-align card-mural"
+              >
+                Manutenção
+              </div>
+              <div
+                id="c4"
+                class="col s12 no-padding bx-azul-escuro valign-wrapper center-align card-mural"
+              >
+                Materiais
+              </div>
+              <div
+                id="c5"
+                class="col s12 no-padding bx-azul-claro valign-wrapper center-align card-mural"
+              >
+                Documentos
+              </div>
+              <div
+                id="c6"
+                class="col s12 no-padding bx-azul-claro valign-wrapper center-align card-mural"
+              >
+                Patrimônio
+              </div>
+              <div
+                id="c7"
+                class="col s12 no-padding bx-azul-claro valign-wrapper center-align card-mural"
+              >
+                <p>Projetos</p>
+              </div>
+              <div
+                id="c8"
+                class="col s12 no-padding bx-azul-claro valign-wrapper center-align card-mural"
+              >
+                Frotas
+              </div>
+              <div
+                id="c9"
+                class="col s12 no-padding bx-azul-claro valign-wrapper center-align card-mural"
+              >
+                GIS
+              </div>
+            </div>
+            <div
+              id="c10"
+              class="col s2 bx-azul-escuro valign-wrapper center-align card-mural"
+            >
+              Gerador de Relatórios
+            </div>
+            <div
+              id="c11"
+              class="col s2 bx-cinza valign-wrapper center-align card-mural"
+            >
+              Business Intelligence
+            </div>
+            <div class="col s2 no-padding">
+              <div
+                id="c12"
+                class="col s12 bx-vermelho valign-wrapper center-align card-mural"
+              >
+                Ciência de Dados e Analítica Avançada
+              </div>
+              <div
+                id="c13"
+                class="col s12 bx-laranja valign-wrapper center-align card-mural"
+              >
+                Aplicações Autônomas Inteligentes (AAI)
+              </div>
+            </div>
+            <div
+              id="c14"
+              class="col s2 bx-laranja-escuro valign-wrapper center-align card-mural"
+            >
+              Pesquisa, Desenvolvimento e Inovação (PD&I)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = init();
+    </script>
+  </body>
+</html>

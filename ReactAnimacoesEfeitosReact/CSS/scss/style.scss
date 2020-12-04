@@ -1,0 +1,399 @@
+$roxo: #7030a0;
+$branco: #fff;
+$black: #000000;
+$cinzaEscuro: #292929;
+$azul: #00326e;
+$azulClaro: #3eb1b0;
+$cinza: #5a7d7c;
+$vermelho: #d62828;
+$laranja: #f9a03f;
+$laranjaEscuro: #f86624;
+$verdeLimao: #b6c931;
+$animeTime: 0.3s;
+
+body {
+  font-size: 12px;
+}
+
+%transicao {
+  transition: all $animeTime linear !important;
+  -webkit-transition: all $animeTime linear !important;
+  -moz-transition: all $animeTime linear !important;
+}
+
+#tabelaGeral {
+  margin-top: 50px;
+
+  .descricao {
+    border: 1px solid $azul;
+    color: $azul;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 200px;
+    overflow-y: auto;
+    h2 {
+      margin: 10px 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .setoresTags {
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .setoresTag {
+      background-color: $black;
+      color: $branco;
+      text-align: center;
+      border: 1px solid $branco;
+      padding: 5px;
+    }
+  }
+
+  .lateralEsquerda {
+    margin: 1px 0;
+    padding-top: 10px;
+    height: 90px;
+    border: 1px solid $roxo;
+    color: $roxo;
+    text-align: center;
+    display: grid;
+    cursor: pointer;
+    @extend %transicao;
+  }
+  .lateralEsquerda.active {
+    @extend %transicao;
+    margin: 1px 0;
+    padding-top: 10px;
+    height: 90px;
+    border: 1px solid $roxo;
+    color: $branco;
+    background-color: $roxo;
+    text-align: center;
+    display: grid;
+  }
+
+  .espectro {
+    margin-top: 30px;
+    height: 40px;
+    background: rgb(0, 50, 110);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 50, 110, 1) 0%,
+      rgba(62, 177, 176, 1) 100%
+    );
+    color: $branco;
+    font-size: 11px;
+    div {
+      height: 100%;
+    }
+    .alinhaEtapa {
+      cursor: pointer;
+      position: relative;
+      img {
+        position: absolute;
+        bottom: 5px;
+        width: 60px;
+        left: calc(50% - 30px);
+      }
+    }
+  }
+
+  .grafico {
+    text-align: center;
+
+    .column {
+      background-color: $azul;
+      @extend %transicao;
+    }
+    .infoColumn {
+      font-weight: bold;
+      height: 40px;
+      color: $azul;
+      @extend %transicao;
+    }
+    #ge1 {
+      .hideColumn {
+        height: 250px;
+        @extend %transicao;
+      }
+      .column {
+        height: 50px;
+        @extend %transicao;
+      }
+    }
+    #ge2 {
+      .hideColumn {
+        height: 220px;
+        @extend %transicao;
+      }
+      .column {
+        height: 80px;
+        @extend %transicao;
+      }
+    }
+    #ge3 {
+      .hideColumn {
+        height: 170px;
+        @extend %transicao;
+      }
+      .column {
+        height: 130px;
+        @extend %transicao;
+      }
+    }
+    #ge4 {
+      .hideColumn {
+        height: 10px;
+        @extend %transicao;
+      }
+      .column {
+        height: 290px;
+        @extend %transicao;
+      }
+    }
+  }
+
+  .colGraf.active {
+    .infoColumn {
+      background-color: $verdeLimao;
+      color: $branco;
+      font-weight: bold;
+      display: grid;
+      @extend %transicao;
+    }
+    .column {
+      margin-top: 10px;
+      background-color: $verdeLimao;
+      @extend %transicao;
+    }
+    .hideColumn {
+      margin-bottom: -10px;
+      @extend %transicao;
+    }
+  }
+
+  #cards {
+    text-align: center;
+    position: relative;
+    .cardbg,
+    .cardModal {
+      top: 0px;
+      left: 50%;
+      overflow: hidden;
+      width: 0px;
+      height: 0px;
+      @extend %transicao;
+      position: absolute;
+    }
+    .card-mural {
+      cursor: pointer;
+      display: grid;
+    }
+    .card-mural:hover {
+      opacity: 0.8;
+    }
+    .cardModal.active {
+      position: absolute;
+      display: initial;
+      @extend %transicao;
+      left: calc(50% - 200px);
+      top: calc(50% - 100px);
+      width: 400px;
+      height: 200px;
+      background-color: rgba($color: #fff, $alpha: 1);
+      z-index: 999;
+      text-align: left;
+      border-radius: 4px;
+      span {
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        cursor: pointer;
+      }
+      h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+      p {
+        font-size: 14px;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+    }
+    .cardbg.active {
+      position: absolute;
+      left: 0px;
+      display: initial;
+      top: 0px;
+      z-index: 998;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      cursor: pointer;
+    }
+    p {
+      display: inline-block;
+    }
+    .bx-azul-claro {
+      border: 1px solid $azulClaro;
+      color: $azulClaro;
+      @extend %transicao;
+    }
+    .bx-azul-claro.active {
+      border: 1px solid $azulClaro;
+      background-color: $azulClaro;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-azul-claro.inative {
+      border: 1px solid $cinzaEscuro;
+      background-color: $cinzaEscuro;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-azul-escuro {
+      border: 1px solid $azul;
+      color: $azul;
+      @extend %transicao;
+    }
+    .bx-azul-escuro.active {
+      border: 1px solid $azul;
+      background-color: $azul;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-azul-escuro.inative {
+      border: 1px solid $cinzaEscuro;
+      background-color: $cinzaEscuro;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-cinza {
+      border: 1px solid $cinza;
+      color: $cinza;
+      @extend %transicao;
+    }
+    .bx-cinza.active {
+      border: 1px solid $cinza;
+      background-color: $cinza;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-cinza.inative {
+      border: 1px solid $cinzaEscuro;
+      background-color: $cinzaEscuro;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-vermelho {
+      border: 1px solid $vermelho;
+      color: $vermelho;
+      @extend %transicao;
+    }
+    .bx-vermelho.active {
+      border: 1px solid $vermelho;
+      background-color: $vermelho;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-vermelho.inative {
+      border: 1px solid $cinzaEscuro;
+      background-color: $cinzaEscuro;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-laranja {
+      border: 1px solid $laranja;
+      color: $laranja;
+      @extend %transicao;
+    }
+    .bx-laranja.active {
+      border: 1px solid $laranja;
+      background-color: $laranja;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-laranja.inative {
+      border: 1px solid $cinzaEscuro;
+      background-color: $cinzaEscuro;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-laranja-escuro {
+      border: 1px solid $laranjaEscuro;
+      color: $laranjaEscuro;
+      @extend %transicao;
+    }
+    .bx-laranja-escuro.active {
+      border: 1px solid $laranjaEscuro;
+      background-color: $laranjaEscuro;
+      color: $branco;
+      @extend %transicao;
+    }
+    .bx-laranja-escuro.inative {
+      border: 1px solid $cinzaEscuro;
+      background-color: $cinzaEscuro;
+      color: $branco;
+      @extend %transicao;
+    }
+
+    #c1 {
+      height: 366px;
+    }
+    #c2 {
+      height: 47px;
+      display: grid;
+    }
+    #c3 {
+      height: 47px;
+      display: grid;
+    }
+    #c4 {
+      height: 47px;
+      display: grid;
+    }
+    #c5 {
+      height: 45px;
+      display: grid;
+    }
+    #c6 {
+      height: 45px;
+      display: grid;
+    }
+    #c7 {
+      height: 45px;
+      display: grid;
+    }
+    #c8 {
+      height: 45px;
+      display: grid;
+    }
+    #c9 {
+      height: 45px;
+      display: grid;
+    }
+    #c10 {
+      height: 366px;
+    }
+    #c11 {
+      height: 366px;
+    }
+    #c12 {
+      height: 183px;
+    }
+    #c13 {
+      height: 183px;
+    }
+    #c14 {
+      height: 366px;
+    }
+  }
+}
