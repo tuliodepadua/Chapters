@@ -28,7 +28,7 @@ Este repositório tem como objetivo armazenar conteúdo de minhas apresentaçõe
   Para instalar as libs rode **_npm i_**
   Para rodar ativar o compilador do scss rode **_npm run watch-css_**
 
-- ### Lotie
+- ### Lottie
 
   **Descrição:**
   Exemplo do uso da lib lotie.
@@ -38,6 +38,12 @@ Este repositório tem como objetivo armazenar conteúdo de minhas apresentaçõe
   Para instalar as libs rode **_yarn_**
   Para rodar a aplicação utilize **_yarn start_**
   **Referência:**
+  Video referência
+  https://www.youtube.com/watch?v=dZH9aDX8T-0
+
+  Lottie files
+  https://lottiefiles.com/
+
   Plugin Affter effects
   https://aescripts.com/bodymovin
 
